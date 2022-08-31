@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 405px;
+    height: 812px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.content {
+    width: 282px;
+    margin: 0 auto;
+}
+
+.content img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container input{
+    position: relative;
+    top: 550px;
+    left: 0;
+    margin: 10px;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container input:checked {
+    background: #92E3A9;
+}
+
+.buttons {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.buttons label {
+    width: 308px;
+    height: 54px;
+    padding: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: #92E3A9;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px #A1C3FC;
+    display: block;
+}
+
+.buttons label:nth-child(2n){
+    background: #FFFFFF;
+    color: #92E3A9;
+    box-shadow: none;
+}
+
+#page-1:checked~.page-1 {
+    display: flex;
+
+}
+
+#page-2:checked~.page-2 {
+    display: flex;
+
+}
+
+#page-3:checked~.page-3 {
+    display: flex;
+}
+
+@media (max-width:450px) {
+    .card, .content {
+        width: 290px;
+    }
+
+    .content img {
+        width: 290px;
+    }
+
+    .buttons label {
+        width: 250px;
+    }
+}
+
