@@ -15,7 +15,7 @@ body {
 }
 
 .card {
-    width: 405px;
+    max-width: 405px;
     height: 800px;
     display: none;
     flex-direction: column;
@@ -24,14 +24,9 @@ body {
 }
 
 .content {
-    width: 282px;
+    max-width: 282px;
     margin: 0 auto;
-}
-
-.content img {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+    padding: 5px;
 }
 
 .card h2 {
@@ -104,11 +99,8 @@ body {
 }
 
 @media (max-width:450px) {
-    .card, .content {
-        width: 290px;
-    }
     .content img {
-        width: 290px;
+        width: 100%;
     }
     .buttons label {
         width: 250px;
